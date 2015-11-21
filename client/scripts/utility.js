@@ -47,7 +47,8 @@ $(document).ready(function() {
     });
 
     $sendMsg.on('click', function() {
-        onSendMsg();
+        onSendMsg($sendMsg.val());
+        $sendMsg.val('');
     });
 
     $rooms.on('click', 'a', function() {
